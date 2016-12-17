@@ -21,7 +21,8 @@
   "content_scripts": [
     {
     "matches": ["https://my.sa.ucsb.edu/gold/ResultsFindCourses.aspx"],
-    "js":["courses.js"]
+    "js":["courses.js"],
+    "run_at": "document_end"
     }
   ],
 
@@ -30,6 +31,10 @@
     "32": "favicon_32.png",
     "48": "favicon_48.png"
   },
+
+  "web_accessible_resources": [
+    "courses.js"
+  ],
 
   "manifest_version": 2
 }
