@@ -1,7 +1,7 @@
 {
   "name": "Gold Enhancement Suite",
-  "description": "Enhance the Gold experience",
-  "version": "0.0",
+  "description": "Enhance the Gold Experience",
+  "version": "0.3",
   "permissions": [
     "activeTab",
     "https://my.sa.ucsb.edu/gold/*"
@@ -14,14 +14,14 @@
 
   "browser_action":{
     "default_title": "Gold Enhancement Suite",
-    "default_icon":"favicon_48.png",
+    "default_icon": "favicon_48.png",
     "default_popup": "popup.html"
   },
 
   "content_scripts": [
     {
     "matches": ["https://my.sa.ucsb.edu/gold/ResultsFindCourses.aspx"],
-    "js":["courses.js"],
+    "js": ["contentScript.js"],
     "run_at": "document_end"
     }
   ],
