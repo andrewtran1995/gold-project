@@ -1,3 +1,4 @@
+// Ensure that courses.js is *always* called
 var s = document.createElement('script');
 s.src = chrome.extension.getURL('courses.js');
 s.onload = function() {
